@@ -1,0 +1,120 @@
+.Media {
+    margin-top: 5vw;
+    margin-left: 5vw;
+}
+
+.mainAniImage {
+    background-image: url('./Circle1.svg');
+    width: 30vw;
+    height: 30vw;
+    position: relative;
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+
+.mainAniImage2 {
+    background-image: url('./Circle2.svg');
+    width: 23vw;
+    height: 23vw;
+    position: relative;
+    margin-top: -26.5%;
+    margin-left: 3.5%;
+    -webkit-animation: rotating_rev 4s linear infinite;
+    -moz-animation: rotating_rev 4s linear infinite;
+    -ms-animation: rotating_rev 4s linear infinite;
+    -o-animation: rotating_rev 4s linear infinite;
+    animation: rotating_rev 4s linear infinite;
+}
+
+@-webkit-keyframes rotating
+/* Safari and Chrome */
+
+{
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating_rev {
+    from {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    to {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.p_Texts {
+    width: 25vw;
+    position: relative;
+    margin-top: -22%;
+    margin-left: 2.5%;
+}
+
+.p_hi {
+    color: #E09F3E;
+    text-align: center;
+    font-size: 3.2vw;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+.p_iam {
+    color: #335C67;
+    text-align: center;
+    font-size: 2.2vw;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.p_proowner {
+    color: #9E2A2B;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.p_Texts img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}

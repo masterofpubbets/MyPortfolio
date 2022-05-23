@@ -1,0 +1,20 @@
+.Certificates {
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+    background-color: #335C67;
+}
+
+.IconsContainer {
+    margin-top: 80px;
+    margin-left: 60px;
+    height: auto;
+}
+
+.Icon {
+    margin-bottom: 90px;
+}
+
+.Icon img {
+    max-height: 90px;
+}

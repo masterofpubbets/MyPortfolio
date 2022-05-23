@@ -1,0 +1,31 @@
+.Header {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.ButtonsSection {
+    display: flex;
+    flex-direction: row;
+    margin-right: 60px;
+    align-self: center;
+}
+
+.PageTitle {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.PageTitle p {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+
+.TitleBox {
+    border-radius: 10%;
+    width: 50px;
+    height: 4px;
+}

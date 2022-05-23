@@ -1,0 +1,19 @@
+.WhatIDoSection {
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(224, 159, 62, 0.21);
+}
+
+.IconsContainer {
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.Icon {
+    margin-bottom: 90px;
+}
+
+.Icon img {
+    max-height: 90px;
+}

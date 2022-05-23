@@ -1,0 +1,11 @@
+.HeaderButton {
+    font-weight: bold;
+    color: #540B0E;
+    padding: 1em;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.MainButtonStyle p:hover {
+    font-size: 1.05em;
+}

@@ -1,0 +1,45 @@
+.HomeSection {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.eslamPic {
+    width: 22%;
+    position: relative;
+    margin-top: -24%;
+    margin-left: 45%;
+}
+
+.MyWord {
+    width: 25vw;
+    position: relative;
+    margin-top: -22%;
+    margin-left: 67%;
+}
+
+.fWord {
+    color: #E09F3E;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+
+.sWord {
+    color: #335C67;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.tWord {
+    color: #9E2A2B;
+    text-align: left;
+    font-size: 1vw;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}

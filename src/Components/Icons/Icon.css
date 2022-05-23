@@ -1,0 +1,21 @@
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.icons p {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.icons img {
+    object-fit: contain;
+}
+
+.icons:hover img {
+    -webkit-animation: scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}

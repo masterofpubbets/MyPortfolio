@@ -1,0 +1,25 @@
+.EslamMark {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.EslamMark p {
+    font-weight: bold;
+    color: #335C67;
+    font-size: 1.5em;
+    margin-left: 50px;
+}
+
+.EslamMark p span {
+    font-weight: bold;
+    color: #9E2A2B;
+}
+
+.MarkCircle {
+    background: #9E2A2B;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
