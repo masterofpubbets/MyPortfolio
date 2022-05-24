@@ -1,27 +1,33 @@
 .HomeSection {
     margin: 0;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+}
+
+.home-elements {
+    position: relative;
+    bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: auto;
 }
 
 .eslamPic {
-    width: 22%;
-    position: relative;
-    margin-top: -24%;
-    margin-left: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.eslamPic img {
+    width: 25vw;
 }
 
 .MyWord {
-    width: 25vw;
-    position: relative;
-    margin-top: -22%;
-    margin-left: 67%;
+    width: 35vw;
 }
 
 .fWord {
     color: #E09F3E;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1.5vw;
     font-weight: lighter;
     margin-bottom: 0px;
 }
@@ -29,7 +35,7 @@
 .sWord {
     color: #335C67;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: bolder;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -38,8 +44,51 @@
 .tWord {
     color: #9E2A2B;
     text-align: left;
-    font-size: 1vw;
+    font-size: 1.5vw;
     font-weight: normal;
     margin-bottom: 0px;
     margin-top: 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .eslamPic img {
+        margin-left: 35vw;
+    }
+    .HomeSection {
+        min-height: 40vh;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .HomeSection {
+        min-height: 30vh;
+    }
+}
+
+@media screen and (max-width: 2860px) {
+    .HomeSection {
+        min-height: 20vh;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .MyWord {
+        margin-top: 20vh;
+    }
+    .tWord {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .MyWord {
+        margin-top: 30vh;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .tWord {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }

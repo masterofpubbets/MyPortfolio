@@ -1,3 +1,7 @@
+.AppColorWhite {
+    color: #fff;
+}
+
 .AppColorBlue {
     color: #335C67;
 }
@@ -26,6 +30,10 @@
     color: #000000;
 }
 
+.AppBackgroundWhite {
+    background: #fff;
+}
+
 .AppBackgroundBlue {
     background: #335C67;
 }
@@ -44,4 +52,28 @@
 
 .AppBackgroundDarkYellow {
     background: #E09F3E;
+}
+
+.IconsContainer {
+    margin-top: 80px;
+    margin-left: 8px;
+}
+
+.Icon {
+    margin-bottom: 90px;
+}
+
+.Icon img {
+    max-height: 90px;
+}
+
+.silder-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -25px;
+    padding-bottom: 0px;
+}
+
+.silder-button {
+    margin-left: 5px;
 }

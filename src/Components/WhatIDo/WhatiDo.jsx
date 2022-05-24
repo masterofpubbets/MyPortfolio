@@ -9,12 +9,12 @@ import DBIcon from '../../Assets/db.svg';
 import CloudIcon from '../../Assets/cloud.svg';
 import Icon from '../Icons/Icon';
 import PageTitle from '../Header/PageTitle';
-
+import HomePageSlider from '../Misc/HomePageSlider';
 
 function WhatIDo() {
     return (
-        <div className='WhatIDoSection'>
-            <PageTitle title="What I Do" color="AppColorBlue" boxColor="AppBackgroundLightRed"/>
+        <div className='WhatIDoSection' id='id-what-i-do'>
+            <PageTitle title="What I Do" color="AppColorBlue" boxColor="AppBackgroundLightRed" />
             <div className='IconsContainer row'>
                 <div className='Icon col s12 m6 l3'><Icon title="Product Management" icon={ProductManagementIcon} /></div>
                 <div className='Icon col s12 m6 l3'><Icon title="Business Developer" icon={BusinessDeveloperIcon} /></div>
@@ -24,7 +24,9 @@ function WhatIDo() {
                 <div className='Icon col s12 m6 l3'><Icon title="Developing" icon={DeveloperIcon} /></div>
                 <div className='Icon col s12 m6 l3'><Icon title="DBMS & SQL" icon={DBIcon} /></div>
                 <div className='Icon col s12 m6 l3'><Icon title="Cloudification" icon={CloudIcon} /></div>
-                
+            </div>
+            <div className='row'>
+            <HomePageSlider css="silder-buttons" color="brown" size = "Tiny" foreColor = "grey-text text-lighten-3" cssSlider = "silder-button"/>
             </div>
         </div>
     );

@@ -4,17 +4,3 @@
     overflow: hidden;
     background-color: rgba(255, 243, 176, 0.14);
 }
-
-.IconsContainer {
-    margin-top: 80px;
-    margin-left: 60px;
-    height: auto;
-}
-
-.Icon {
-    margin-bottom: 90px;
-}
-
-.Icon img {
-    max-height: 90px;
-}

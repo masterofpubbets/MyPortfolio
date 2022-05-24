@@ -2,18 +2,5 @@
     margin: 0;
     height: auto;
     overflow: hidden;
-    background-color: #E09F3E;
-}
-
-.IconsContainer {
-    margin-top: 80px;
-    margin-left: 60px;
-}
-
-.Icon {
-    margin-bottom: 90px;
-}
-
-.Icon img {
-    max-height: 90px;
+    background-color: #bf360c;
 }

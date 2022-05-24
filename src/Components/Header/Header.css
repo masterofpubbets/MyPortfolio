@@ -19,13 +19,13 @@
 }
 
 .PageTitle p {
-    font-weight: bold;
-    font-size: 1.5em;
+    font-weight: normal;
+    font-size: 1.3em;
     margin-bottom: 0px;
 }
 
 .TitleBox {
     border-radius: 10%;
     width: 50px;
-    height: 4px;
+    height: 2px;
 }

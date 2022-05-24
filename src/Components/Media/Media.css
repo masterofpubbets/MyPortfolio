@@ -1,13 +1,17 @@
 .Media {
     margin-top: 5vw;
     margin-left: 5vw;
+    margin-bottom: 20px;
+    width: 24vw;
 }
 
 .mainAniImage {
     background-image: url('./Circle1.svg');
-    width: 30vw;
-    height: 30vw;
+    background-size: contain;
+    width: 24vw;
+    height: 24vw;
     position: relative;
+    margin-top: 0%;
     -webkit-animation: rotating 2s linear infinite;
     -moz-animation: rotating 2s linear infinite;
     -ms-animation: rotating 2s linear infinite;
@@ -17,11 +21,12 @@
 
 .mainAniImage2 {
     background-image: url('./Circle2.svg');
-    width: 23vw;
-    height: 23vw;
+    background-size: contain;
+    width: 20vw;
+    height: 20vw;
     position: relative;
-    margin-top: -26.5%;
-    margin-left: 3.5%;
+    margin-top: -22vw;
+    margin-left: 2.1vw;
     -webkit-animation: rotating_rev 4s linear infinite;
     -moz-animation: rotating_rev 4s linear infinite;
     -ms-animation: rotating_rev 4s linear infinite;
@@ -82,14 +87,13 @@
 .p_Texts {
     width: 25vw;
     position: relative;
-    margin-top: -22%;
-    margin-left: 2.5%;
+    margin-top: -20vw;
 }
 
 .p_hi {
     color: #E09F3E;
     text-align: center;
-    font-size: 3.2vw;
+    font-size: 2.8vw;
     font-weight: bolder;
     margin-bottom: 0px;
 }
@@ -106,7 +110,7 @@
 .p_proowner {
     color: #9E2A2B;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.4vw;
     font-weight: bold;
     margin-bottom: 0px;
     margin-top: 0px;
