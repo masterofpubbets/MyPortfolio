@@ -19,7 +19,7 @@ function Icon(params) {
         )
     } else {
         return (
-            <div className="icons">
+            <div className="icons z-depth-5">
                 <a href={link} target="_blank" rel="noreferrer">
                     <img src={icon} alt={title}></img>
                 </a>

@@ -1,9 +1,17 @@
+.hide-div {
+    display: none;
+}
+
 .AppColorWhite {
     color: #fff;
 }
 
 .AppColorBlue {
     color: #335C67;
+}
+
+.AppColorDarkBlue {
+    color: #01579b;
 }
 
 .AppColorRed {
@@ -30,12 +38,24 @@
     color: #000000;
 }
 
+.AppColorBrown {
+    color: #3e2723;
+}
+
 .AppBackgroundWhite {
     background: #fff;
 }
 
+.AppBackgroundBlack {
+    background: #000000;
+}
+
 .AppBackgroundBlue {
     background: #335C67;
+}
+
+.AppBackgroundDarkBlue {
+    background-color: #01579b;
 }
 
 .AppBackgroundRed {
@@ -52,6 +72,10 @@
 
 .AppBackgroundDarkYellow {
     background: #E09F3E;
+}
+
+.AppBackgroundBrown {
+    background: #3e2723;
 }
 
 .IconsContainer {
@@ -76,4 +100,48 @@
 
 .silder-button {
     margin-left: 5px;
+}
+
+.app-footer {
+    margin-bottom: 0px;
+}
+
+.determinate-width-10 {
+    width: 10%;
+}
+
+.determinate-width-20 {
+    width: 20%;
+}
+
+.determinate-width-30 {
+    width: 30%;
+}
+
+.determinate-width-40 {
+    width: 40%;
+}
+
+.determinate-width-50 {
+    width: 50%;
+}
+
+.determinate-width-60 {
+    width: 60%;
+}
+
+.determinate-width-70 {
+    width: 70%;
+}
+
+.determinate-width-80 {
+    width: 80%;
+}
+
+.determinate-width-90 {
+    width: 90%;
+}
+
+.determinate-width-100 {
+    width: 100%;
 }

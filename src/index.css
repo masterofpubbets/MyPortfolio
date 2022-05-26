@@ -9,3 +9,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: rgba(255, 243, 176, 0.14);
 }
+
+.main-div {
+    min-height: 60vh;
+}

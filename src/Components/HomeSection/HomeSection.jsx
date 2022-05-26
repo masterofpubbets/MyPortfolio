@@ -1,12 +1,11 @@
 import './HomeSection.css';
 import Media from '../Media/Media';
 import eslam from '../../Assets/eslam.svg';
-import Header from '../Header/Header';
 
 function HomeSection() {
     return (
         <div className='HomeSection' id='id-home'>
-            <Header />
+            
 
             <div className='row home-elements'>
 

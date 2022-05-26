@@ -1,29 +1,32 @@
 import './App.css';
-import HomeSection from './Components/HomeSection/HomeSection';
-import WhatIDo from './Components/WhatIDo/WhatiDo';
-import UseCases from './Components/UseCases/UseCases';
-import Certificates from './Components/Certificates/Certificates';
-import Articles from './Components/Articles/Articles';
-import Contact from './Components/Contacts/Contact';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
+import Home from './Components/HomeSection/Home';
 import 'materialize-css/dist/css/materialize.min.css';
-import SideNavBar from './Components/SideNavBar/SIdeNavBar';
+import Header from './Components/Header/Header';
+import SideNavBar from './Components/SideNavBar/SideNavBar';
+import MesSended from './Components/Misc/MesSended';
+import Skills from './Components/Skills/Skills';
 
 
 function App() {
+    const css = "hide-on-med-and-up";
     return (
-        <div className='App' >
-            <div className='hide-on-med-and-up'>
-                <SideNavBar />
-            </div>
-            <HomeSection />
-            <WhatIDo />
-            <UseCases />
-            <Certificates />
-            <Articles />
-            <Contact />
-            <Footer />
-        </div >
+        <BrowserRouter>
+            <div className='App' >
+                <div className={css}>
+                    <SideNavBar />
+                </div>
+                <Header />
+                <Routes>
+                    <Route path="/sended" element={ <MesSended />} />
+                    <Route path="/skills" element={ <Skills />} />
+                    <Route path="/" exact element={ <Home /> } />
+                </Routes>
+                <Footer />
+            </div >
+
+        </BrowserRouter>
     );
 }
 

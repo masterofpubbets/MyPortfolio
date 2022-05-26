@@ -6,7 +6,7 @@ import HomePageSlider from '../Misc/HomePageSlider';
 function Articles() {
     return (
         <div className='Articles' id='id-article'>
-            <PageTitle title="Articles" color="AppColorBlue" boxColor="AppBackgroundLightRed"/>
+            <PageTitle title="Articles" color="AppColorRed" boxColor="AppBackgroundLightRed"/>
             <div className='IconsContainer row'>
 
             </div>

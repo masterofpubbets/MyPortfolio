@@ -1,10 +1,14 @@
 import './EslamMark.css'
+import { NavLink } from 'react-router-dom';
 
 function EslamMark() {
     return (
         <div className="EslamMark">
-            <p>Eslam <span>Aly</span></p>
+            <NavLink to="/">
+                <p>Eslam <span>Aly</span></p>
+            </NavLink>
             <div className="MarkCircle"></div>
+
         </div>
     );
 
