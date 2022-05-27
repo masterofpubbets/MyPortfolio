@@ -145,3 +145,11 @@
 .determinate-width-100 {
     width: 100%;
 }
+
+.blockquote-blue {
+    border-left-color: #0288d1 !important;
+}
+
+.blockquote-brwon {
+    border-left-color: #a1887f !important;
+}

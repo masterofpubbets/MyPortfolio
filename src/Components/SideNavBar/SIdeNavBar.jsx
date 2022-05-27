@@ -18,16 +18,16 @@ function SideNavBar() {
                     <div className="background">
                         <img src={SideBarBG} alt="Eslam"></img>
                     </div>
-                    <a href="#"><img className="circle" src={eslamPic} alt="Eslam Aly"></img></a>
-                    <a href="#"><span className="white-text name">Eslam Aly</span></a>
-                    <a href="#"><span className="white-text email">master.pubbets@gmail.com</span></a>
+                    <img className="circle" src={eslamPic} alt="Eslam Aly"></img>
+                    <span className="white-text name">Eslam Aly</span>
+                    <span className="white-text email">master.pubbets@gmail.com</span>
                 </div></li>
 
                 <li><NavLink to="/skills"><i className="material-icons">directions_run</i>SKILLS</NavLink></li>
-                 <li><a href="#"><i className="material-icons">business_center</i>WORK</a></li>
+                 <li><NavLink to="/"><i className="material-icons">business_center</i>WORK</NavLink></li>
                 <li><a href="./myresume/eslam.html" target="_blank" rel="noopener noreferrer"><i className="material-icons">recent_actors</i>RESUME</a></li>
-                <li><a href="#"><i className="material-icons">cloud</i>ABOUT</a></li>
-                <li><a href="#"><i className="material-icons">contact_mail</i>CONTACT</a></li>
+                <li><NavLink to="/about"><i className="material-icons">cloud</i>ABOUT</NavLink></li>
+                <li><NavLink to="/contacts"><i className="material-icons">contact_mail</i>CONTACT</NavLink></li>
                 
                 <li><div className="divider"></div></li>
                 <li><a className="subheader">Social</a></li>

@@ -11,8 +11,8 @@ function Header() {
                 <NavLink to="/skills"><HeaderButton title="SKILLS" link="#" external={false}/></NavLink>
                  <HeaderButton title="WORK" link="#" external={false}/>
                 <HeaderButton title="RESUME" link="./myresume/eslam.html" external={true}/>
-                <HeaderButton title="ABOUT" link="#" external={false}/>
-                <HeaderButton title="CONTACT" link="#" external={false}/>
+                <NavLink to="/about"><HeaderButton title="ABOUT" link="#" external={false}/></NavLink>
+                <NavLink to="/contacts"><HeaderButton title="CONTACT" link="#" external={false}/></NavLink>
             </div>
         </div>
     );
