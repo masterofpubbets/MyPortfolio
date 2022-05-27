@@ -14,6 +14,10 @@ function Card(params) {
     const footer2Css = params.footer2BackColor + " " + params.footer2ForeColor + " right";
     const details = params.details;
     const details2 = params.details2;
+    const collapsible1BackColor = params.collapsible1BackColor;
+    const collapsible1ForeColor = params.collapsible1ForeColor;
+    const collapsible2BackColor = params.collapsible2BackColor;
+    const collapsible2ForeColor = params.collapsible2ForeColor;
 
     return (
         <Fragment>
@@ -31,8 +35,18 @@ function Card(params) {
                         <span className={footer2Css}>{footer2}</span>
                     </div>
                 </div>
-                <Collapsible title="More Details" details={details} icon="arrow_drop_down" backColor="blue-grey" foreColor="white-text" />
-                <Collapsible title="Tools Used" details={details2} icon="laptop_mac" backColor="blue-grey" foreColor="white-text" />
+                <Collapsible 
+                title="More Details" 
+                details={details} 
+                icon="arrow_drop_down" 
+                backColor={collapsible1BackColor} 
+                foreColor={collapsible1ForeColor} 
+                title2="Tools" 
+                details2={details2} 
+                icon2="arrow_drop_down" 
+                backColor2={collapsible2BackColor}
+                foreColor2={collapsible2ForeColor}
+                />
             </div>
 
         </Fragment>

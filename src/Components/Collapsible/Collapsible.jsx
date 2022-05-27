@@ -7,6 +7,10 @@ function Collapsible(params) {
     const title = params.title;
     const icon = params.icon;
     const cssColor = "collapsible-header " + params.backColor + " " + params.foreColor;
+    const details2 = params.details2;
+    const title2 = params.title2;
+    const icon2 = params.icon2;
+    const cssColor2 = "collapsible-header " + params.backColor2 + " " + params.foreColor2;
 
     useEffect(()=> {
         M.AutoInit();
@@ -14,10 +18,14 @@ function Collapsible(params) {
 
     return (
         <div>
-            <ul className="collapsible">
+            <ul className="collapsible popout">
                 <li>
                     <div className={cssColor}><i className="material-icons">{icon}</i>{title}</div>
                     <div className="collapsible-body"><span>{details}</span></div>
+                </li>
+                <li>
+                    <div className={cssColor2}><i className="material-icons">{icon2}</i>{title2}</div>
+                    <div className="collapsible-body"><span>{details2}</span></div>
                 </li>
             </ul>
         </div>
