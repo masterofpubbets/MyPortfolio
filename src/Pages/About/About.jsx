@@ -7,15 +7,15 @@ function About() {
             </div>
 
             <blockquote className="blockquote-blue">
-                <p className="flow-text">"Let's get acquainted! My name is Eslam Aly and i am a Product Owner,
+                <p className="fontsize-12em">"Let's get acquainted! My name is Eslam Aly and i am a Product Owner,
                     and it took me so long until i reach here.
                     20 years ago i graduated from Faculty of Sciences Mathematics and computer sciences division so I was born to this career as a programmer and I love it so much. I love to build things that works and fitting together to solve another person’s problem. </p>
             </blockquote>
             <blockquote>
-                <p className="flow-text">Now after a way long of studying and working experience I am a specialist in Product Management, and I am always coaching my team and leading them to continue building things together that work and fit together.</p>
+                <p className="fontsize-12em">Now after a way long of studying and working experience I am a specialist in Product Management, and I am always coaching my team and leading them to continue building things together that work and fit together.</p>
             </blockquote>
             <blockquote className="blockquote-brwon">
-                <p className="flow-text">Motivated and forward-thinking product owner with 18+
+                <p className="fontsize-12em">Motivated and forward-thinking product owner with 18+
                     years of experience in a dynamic SaaS environment.
                     Eager to support team with leadership and guidance over
                     a wide range of product development efforts in order to

@@ -1,0 +1,111 @@
+.article-cover {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-areas: "article-cover-img article-cover-header" "article-cover-img article-cover-footer-text";
+}
+
+.article-cover img {
+    grid-area: article-cover-img;
+    height: 25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-cover-header {
+    grid-area: article-cover-header;
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.article-cover-footer {
+    grid-area: article-cover-footer-text;
+}
+
+.article-cover-footer p {
+    font-style: italic;
+    font-size: 0.95em;
+}
+
+.articale-my-word {
+    margin-bottom: 50px;
+}
+
+.article-text-input {
+    font-size: 1em;
+    color: brown;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.article-text-output {
+    font-size: 1em;
+    color: #2e7d32;
+    font-style: italic;
+    margin-top: 0px;
+}
+
+.sub-paragraph {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sub-sub-paragraph {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sub-sub-sub-paragraph {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-p-example {
+    font-style: italic;
+    color: #b71c1c;
+}
+
+.article-p-note {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.sub-paragraph span {
+    font-weight: bold;
+}
+
+.size-height-20em {
+    height: 20em;
+}
+
+@media screen and (max-width: 600px) {
+    .article-cover {
+        grid-template-areas: "article-cover-img " "article-cover-header" "article-cover-footer-text";
+    }
+    .article-cover img {
+        height: 15em;
+    }
+    .article-cover-header {
+        text-align: center;
+    }
+    .article-cover-footer {
+        margin-left: 15px;
+    }
+    .size-height-20em {
+        height: 10em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .article-cover {
+        grid-template-areas: "article-cover-img " "article-cover-header" "article-cover-footer-text";
+    }
+    .article-cover-header {
+        font-size: 1em;
+        text-align: center;
+    }
+}

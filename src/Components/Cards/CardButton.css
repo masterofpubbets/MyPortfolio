@@ -1,0 +1,50 @@
+.card-button-main {
+    display: grid;
+    grid-template-areas: 'h h' 'img det' 'btn btn';
+}
+
+.card-button-header {
+    grid-area: h;
+    justify-content: center;
+    display: flex;
+}
+
+.card-button-header p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.card-button-img {
+    grid-area: img;
+    width: auto;
+}
+
+.card-button-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.card-button-img:hover img {
+    -webkit-animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 0.8s both;
+}
+
+.card-button-det {
+    grid-area: det;
+}
+
+.card-button-btn {
+    grid-area: btn;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+    .card-button-det {
+        height: 275px;
+    }
+}

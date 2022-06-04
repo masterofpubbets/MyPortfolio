@@ -4,3 +4,42 @@
     overflow: hidden;
     background-color: #ffe0b2;
 }
+
+.usecase-item {
+    display: grid;
+    margin-bottom: 25px;
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas: 'usecase-item-header usecase-item-header' 'usecase-item-items usecase-item-image' 'usecase-item-footer usecase-item-footer';
+}
+
+.usecase-item-header {
+    grid-area: usecase-item-header;
+    text-align: center;
+    font-weight: bold;
+}
+
+.usecase-item-left {
+    grid-area: usecase-item-items;
+    width: 100%;
+}
+
+.usecase-item-right {
+    grid-area: usecase-item-image;
+}
+
+.usecase-item-right img {
+    width: 100%;
+}
+
+.usecase-item-footer {
+    grid-area: usecase-item-footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+    .usecase-item {
+        grid-template-areas: 'usecase-item-header usecase-item-header' 'usecase-item-items usecase-item-items' 'usecase-item-image usecase-item-image' 'usecase-item-footer usecase-item-footer';
+    }
+}

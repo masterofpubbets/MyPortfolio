@@ -1,5 +1,6 @@
 import './EslamMark.css'
 import { NavLink } from 'react-router-dom';
+import homeLogo from '../../Assets/home.svg';
 
 function EslamMark() {
     return (
@@ -7,7 +8,10 @@ function EslamMark() {
             <NavLink to="/">
                 <p>Eslam <span>Aly</span></p>
             </NavLink>
-            <div className="MarkCircle"></div>
+
+            <NavLink to="/">
+                <img className=' roll-in-left' src={homeLogo} alt="Home"></img>
+            </NavLink>
 
         </div>
     );

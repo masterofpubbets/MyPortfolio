@@ -1,0 +1,12 @@
+.Breadcrumb-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.Breadcrumb-container-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 15px;
+}

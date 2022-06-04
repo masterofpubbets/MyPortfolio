@@ -6,7 +6,7 @@ function HeaderButton(params) {
     const external = params.external;
 
     return (
-        <div className='MainButtonStyle'>
+        <div className='MainButtonStyle  roll-in-left'>
             {external && <a href={link} target="_blank" rel="noopener noreferrer"><p className='HeaderButton'>{title}</p></a>}
             {!external && <p className='HeaderButton'>{title}</p>}
         </div>

@@ -1,0 +1,30 @@
+.icon-paragraph {
+    display: grid;
+    grid-template-columns: auto 6fr;
+    grid-template-areas: 'img header' '. text';
+    margin-top: 20px;
+    align-items: center;
+}
+
+.icon-paragraph-header {
+    grid-area: header;
+}
+
+.icon-paragraph-header {
+    font-weight: bold;
+}
+
+.icon-paragraph-image {
+    grid-area: img;
+    margin-right: 5px;
+}
+
+.icon-paragraph-image i {
+    width: 10px;
+}
+
+.icon-paragraph-text {
+    grid-area: text;
+    margin-top: 0px;
+    width: 90%;
+}

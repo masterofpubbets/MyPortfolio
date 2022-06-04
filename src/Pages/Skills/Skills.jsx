@@ -5,8 +5,8 @@ function Skills() {
         <div className="row main-div">
 
             <div className="col s12 m12 l12">
-                <div class="divider"></div>
-                <div class="section">
+                <div className="divider"></div>
+                <div className="section">
                     <h5>Skills</h5>
                 </div>
             </div>
@@ -193,7 +193,7 @@ function Skills() {
                 Served as a core group member in defining and prioritizing technology investments, ensuring the alignment of process, technology and business objectives.
                 Conceptualized, planned, launched and currently chair the Cybersecurity Committee, a company-wide group focused on improving security of the business’ information infrastructure.
                 "
-                details2=".Net Framwork VB.Net, Kotlin, C++, React, Python, Java, Node JS, Redux, React-Next and PHP"
+                details2=".Net Framwork VB.Net, Kotlin, C++, React, Python, Java, Node JS, Redux, Next-js, Redux and PHP"
             />
 
             <Card

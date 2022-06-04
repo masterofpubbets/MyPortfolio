@@ -78,17 +78,16 @@
     background: #3e2723;
 }
 
-.IconsContainer {
-    margin-top: 80px;
-    margin-left: 8px;
+.AppBackgroundLightBiege {
+    background: rgb(250, 246, 224);
 }
 
-.Icon {
+.article-icons {
     margin-bottom: 90px;
 }
 
-.Icon img {
-    max-height: 90px;
+.article-icons img {
+    max-height: 200px;
 }
 
 .silder-buttons {
@@ -152,4 +151,28 @@
 
 .blockquote-brwon {
     border-left-color: #a1887f !important;
+}
+
+.blockquote-dark-yellow {
+    border-left-color: #E09F3E !important;
+}
+
+.blockquote-red {
+    border-left-color: #9E2A2B !important;
+}
+
+.div-margin-top-25 {
+    margin-top: 25px;
+}
+
+.fontsize-13em {
+    font-size: 1.3em;
+}
+
+.fontsize-12em {
+    font-size: 1.2em;
+}
+
+.fontWeight-bold {
+    font-weight: bold;
 }
