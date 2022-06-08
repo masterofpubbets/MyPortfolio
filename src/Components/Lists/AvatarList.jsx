@@ -11,6 +11,7 @@ function AvatarList(params) {
                         <i className={"material-icons circle " + item.iconBackColor}>{item.iconName}</i>
                         <span className="title fontWeight-bold">{item.title}</span>
                         <p>{item.text}</p>
+                        {item.text2 && <p><br></br>{item.text2}</p>}
                     </li>
                     )
                 })}

@@ -1,4 +1,10 @@
+import { useEffect } from 'react';
+
 function Contacts() {
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+    }, []);
+    
     return (
         <div className="container main-div">
             <div class="divider"></div>

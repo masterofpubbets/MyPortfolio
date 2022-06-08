@@ -1,3 +1,4 @@
+import './Cards.css';
 import { Fragment } from "react";
 import Collapsible from "../Collapsible/Collapsible";
 
@@ -5,7 +6,7 @@ function Card(params) {
     const progressCss = params.progressForeColor + " determinate determinate-width-" + params.progress;
     const progressBackColor = "progress " + params.progressBackColor;
     const cardBackColor = "card " + params.cardBackColor;
-    const cardForeColor = "card-content " + params.cardForeColor;
+    const cardForeColor = "card-content card-body " + params.cardForeColor;
     const cardTitle = params.cardTitle;
     const cardText = params.cardText;
     const footer1 = params.footer1;
@@ -34,19 +35,21 @@ function Card(params) {
                         <span className={footer1Css}>{footer1}</span>
                         <span className={footer2Css}>{footer2}</span>
                     </div>
+                    
+                    <Collapsible
+                        title="More Details"
+                        details={details}
+                        icon="arrow_drop_down"
+                        backColor={collapsible1BackColor}
+                        foreColor={collapsible1ForeColor}
+                        title2="Tools"
+                        details2={details2}
+                        icon2="arrow_drop_down"
+                        backColor2={collapsible2BackColor}
+                        foreColor2={collapsible2ForeColor}
+                    />
                 </div>
-                <Collapsible 
-                title="More Details" 
-                details={details} 
-                icon="arrow_drop_down" 
-                backColor={collapsible1BackColor} 
-                foreColor={collapsible1ForeColor} 
-                title2="Tools" 
-                details2={details2} 
-                icon2="arrow_drop_down" 
-                backColor2={collapsible2BackColor}
-                foreColor2={collapsible2ForeColor}
-                />
+
             </div>
 
         </Fragment>

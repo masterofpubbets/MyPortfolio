@@ -1,4 +1,5 @@
 import './Articles.css';
+import { useEffect } from 'react';
 import AvatarList from '../../Components/Lists/AvatarList';
 import Table from '../../Components/Tables/Table';
 import coverImg from '../../Assets/manager.png';
@@ -8,6 +9,10 @@ import sweetSpotImg from '../../Assets/sweetspot.png';
 
 
 function ArticlePO() {
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+    }, []);
+    
     const listItems = [{
         backColor: "transparent",
         iconBackColor: "amber accent-4",

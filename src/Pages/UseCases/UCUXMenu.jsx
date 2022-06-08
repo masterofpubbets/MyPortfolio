@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import CardButton from "../../Components/Cards/CardButton";
 import cup from '../../Assets/cup.svg';
 import shoes from '../../Assets/shoes.svg';
@@ -7,6 +8,11 @@ import eica from '../../Assets/eica.svg';
 
 
 function UCUXMenu() {
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+    }, []);
+
     return (
         <div className="container main-div">
             <div className="divider"></div>
@@ -59,15 +65,14 @@ function UCUXMenu() {
 
                 <CardButton
                     css="col s12 m6 l4"
-                    header="Elelctrical and Instrumentation App"
+                    header="EICA-Production-App"
                     img={eica}
-                    det="A specific system to control the production steps for electrical and instrumentation items (Cables, Junction Box, Trays, Fixtures, etc.) in oil and gas project.
-                    "
+                    det="A specific system to control the production steps for electrical and instrumentation items (Cables, Junction Box, Trays, Fixtures, etc.) in oil and gas project."
                     buttonCss="brown darken-1"
                     buttonIcon="description"
                     buttonText="Open Case"
                     link="/usecases/usecaseproject"
-                    linkParaValue=""
+                    linkParaValue="eicaprostudy"
                 />
 
                 <CardButton
@@ -75,8 +80,7 @@ function UCUXMenu() {
                     header="Coffee Shop App Insights"
                     img={cup}
                     det="We’re creating an app that is platform for ordering coffee in advanced, and also the ability to create custom coffee, by choosing ground beans type and flavors.
-                    Then provide facility to make the payment to avoid waiting time at cashier.
-                    "
+                    Then provide facility to make the payment to avoid waiting time at cashier."
                     buttonCss="brown darken-1"
                     buttonIcon="description"
                     buttonText="Open Case"

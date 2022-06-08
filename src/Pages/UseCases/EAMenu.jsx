@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import CardButton from "../../Components/Cards/CardButton";
 import eicaImage from '../../Assets/eica.svg';
 
 
 function EAMenu(params) {
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+    }, []);
+    
     return (
         <div className="container main-div">
             <div className="divider"></div>

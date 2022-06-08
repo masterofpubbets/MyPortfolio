@@ -350,3 +350,127 @@ export const eicaEA = {
     caseStudyLink: "https://drive.google.com/file/d/1W88CXjhMgAR93RuXQmi8tMBJk4SJx-mj/view",
     mockupLink: ""
 }
+
+export const eicaProUseCase = {
+    navItems: [{
+            key: 1,
+            link: "/usecases",
+            arrowVisible: true,
+            foreColor: "brown-text text-darken-4",
+            title: "UI/UX Use Cases"
+        },
+        {
+            key: 2,
+            link: ".",
+            arrowVisible: false,
+            foreColor: "brown-text text-darken-4",
+            title: "EICA Production App"
+        }
+    ],
+    items: [{
+            key: 1,
+            header: "The product:",
+            img: "laptop_mac",
+            text: "We’re creating an app that is platform for controlling Electrical and Instrumentation items status changes from designing phase to pre-commissioning one, and it is a management tool used by production/planning team.",
+            textForeColor: " brown-text text-darken-4",
+            textBackColor: "",
+            headerForeColor: " light-blue-text text-darken-4",
+            headerBackColor: "",
+            imageForeColor: " light-blue-text text-darken-4",
+            imageBackColor: ""
+        },
+        {
+            key: 2,
+            header: "Project duration:",
+            img: "access_time",
+            text: "Jan-2014 To Current",
+            textForeColor: " brown-text text-darken-4",
+            textBackColor: "",
+            headerForeColor: " light-blue-text text-darken-4",
+            headerBackColor: "",
+            imageForeColor: " light-blue-text text-darken-4",
+            imageBackColor: ""
+        },
+        {
+            key: 3,
+            header: "My Role:",
+            img: "account_circle",
+            text: "Product Owner and Previously Programming Team Leader, Main Developer",
+            textForeColor: " brown-text text-darken-4",
+            textBackColor: "",
+            headerForeColor: " light-blue-text text-darken-4",
+            headerBackColor: "",
+            imageForeColor: " light-blue-text text-darken-4",
+            imageBackColor: ""
+        },
+        {
+            key: 4,
+            header: "Project Goal:",
+            img: "gps_fixed",
+            text: "Reduce time, effort by proccessing different types of data from variance source in order to an accurate information shows the current state for each discipline.",
+            textForeColor: " brown-text text-darken-4",
+            textBackColor: "",
+            headerForeColor: " light-blue-text text-darken-4",
+            headerBackColor: "",
+            imageForeColor: " light-blue-text text-darken-4",
+            imageBackColor: ""
+        }
+    ],
+    header: "EICA Production-Research Study",
+    caseStudyLink: "https://docs.google.com/presentation/d/1ZAUKF2SIKC2KVZIeKkFl_nb9rO_uiuyrYEAJ_pA9KB8/edit?usp=sharing",
+    mockupLink: ""
+}
+
+
+export const eicaProMan = {
+    navItems: [{
+            key: 1,
+            link: "/proman",
+            arrowVisible: true,
+            foreColor: "brown-text text-darken-4",
+            title: "Project Management Use Cases"
+        },
+        {
+            key: 2,
+            link: ".",
+            arrowVisible: false,
+            foreColor: "brown-text text-darken-4",
+            title: "EICA App Product Manager"
+        }
+    ],
+    floatingAction: {
+        main: {
+            iconName: "apps",
+            colorName: "red",
+        },
+        items: [{
+                iconName: "business_center",
+                colorName: "light-blue accent-2",
+                fontColor: "white",
+                text: "Strategic Drivers and Goals",
+                link: "#eica-strategic-drivers"
+            },
+            {
+                iconName: "search",
+                colorName: "amber accent-4",
+                fontColor: "white",
+                text: "Drivers Assessment",
+                link: "#eica-driver-assessment"
+            },
+            {
+                iconName: "device_hub",
+                colorName: "light-blue accent-2",
+                fontColor: "white",
+                text: "Motivation Viewpoint",
+                link: "#eica-motivatio-viewpoint"
+            },
+            {
+                iconName: "build",
+                colorName: "light-blue darken-4",
+                fontColor: "white",
+                text: "Product Requirements",
+                link: "#eica-product-requirements"
+            }
+        ]
+    }
+}

@@ -2,6 +2,7 @@ import './UseCases.css';
 import { NavLink } from 'react-router-dom';
 import UXUIIcon from '../../Assets/uxui.svg';
 import eaIcon from '../../Assets/enterprisearchitecture.svg';
+import pmIcon from '../../Assets/pms128.png';
 import Icon from '../Icons/Icon';
 import PageTitle from '../Header/PageTitle';
 import HomePageSlider from '../Misc/HomePageSlider';
@@ -17,6 +18,9 @@ function UseCases() {
                 </NavLink>
                 <NavLink to="/ea">
                     <div className='Icon col s12 m6 l3'><Icon title="Enterprise Architecture" icon={eaIcon} color="brown-text text-darken-4" /></div>
+                </NavLink>
+                <NavLink to="/proman">
+                    <div className='Icon col s12 m6 l3'><Icon title="Product Management" icon={pmIcon} color="brown-text text-darken-4" /></div>
                 </NavLink>
             </div>
             <div className='row'>

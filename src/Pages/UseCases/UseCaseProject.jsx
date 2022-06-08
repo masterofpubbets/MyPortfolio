@@ -1,16 +1,20 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Breadcrumbs from "../../Components/Header/Breadcrumbs";
 import UseCaseItem from "../../Components/UseCases/UseCaseItem";
-import { CoffeeShopData, CoffeeShopDataInsight, webSiteShoping, projectPipeline, eicaEA } from '../../Store/Consts/UseCaseData';
+import { CoffeeShopData, CoffeeShopDataInsight, webSiteShoping, projectPipeline, eicaEA, eicaProUseCase } from '../../Store/Consts/UseCaseData';
 import imageWebsite from '../../Assets/websitemockup.png';
 import imagePP from '../../Assets/pphome.jpg';
 import imageEICAEA from '../../Assets/eicaea.png';
 import imageCoffeeshop  from '../../Assets/coffeeshopmockup.png';
+import bpmnImage from '../../Assets/proman/eicapromanbpmn.png';
 
 function UseCaseProject(params) {
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+    }, []);
     
     const { name } = useParams();
-    console.log(process.env.PUBLIC_URL);
 
     const GenerateNavItems = () => {
         if (name === "coffee shop app") {
@@ -34,6 +38,12 @@ function UseCaseProject(params) {
         if (name === "Project Pipeline") {
             return (
                 <Breadcrumbs navItems={projectPipeline.navItems} />
+            )
+        }
+
+        if (name === "eicaprostudy") {
+            return (
+                <Breadcrumbs navItems={eicaProUseCase.navItems} />
             )
         }
 
@@ -104,6 +114,19 @@ function UseCaseProject(params) {
                 headerForeColor="light-blue-text text-darken-4"
                 caseStudyLink={eicaEA.caseStudyLink}
                 mockupLink={eicaEA.mockupLink}
+                />
+            )
+        }
+
+        if (name === "eicaprostudy") {
+            return (
+                <UseCaseItem 
+                items={eicaProUseCase.items} 
+                rightImage={bpmnImage} 
+                header={eicaProUseCase.header} 
+                headerForeColor="light-blue-text text-darken-4"
+                caseStudyLink={eicaProUseCase.caseStudyLink}
+                mockupLink={eicaProUseCase.mockupLink}
                 />
             )
         }

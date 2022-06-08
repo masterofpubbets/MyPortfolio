@@ -15,8 +15,7 @@ function Contact() {
         try {
             const url = 'https://trprojectssolutions.com/eslamalyonline/sendeslamcontact.php';
             const urlParams = url + '?to=' + mail.to + '&fromFullName=' + mail.fromFullName + '&mes=' + mail.mes
-            const result = await axios.get(urlParams);
-            return (result);
+            return await axios.get(urlParams);
         } catch (error) {
 
         }
@@ -53,7 +52,7 @@ function Contact() {
             setErrorMes('Missing Message!')
             return ('error')
         }
-        const result = sendMail({ to: 'eslam@eslamaly.online', fromFullName: name, mes: message });
+        sendMail({ to: 'eslam@eslamaly.online', fromFullName: name, mes: message });
         navigate('/sended');
     };
 

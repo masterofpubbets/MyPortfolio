@@ -5,6 +5,11 @@
     grid-template-areas: "article-cover-img article-cover-header" "article-cover-img article-cover-footer-text";
 }
 
+.article-img {
+    width: 80vw;
+    max-width: 750px;
+}
+
 .article-cover img {
     grid-area: article-cover-img;
     height: 25em;

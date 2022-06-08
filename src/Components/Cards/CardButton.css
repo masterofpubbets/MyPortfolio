@@ -48,3 +48,9 @@
         height: 275px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .card-button-det {
+        height: 300px;
+    }
+}

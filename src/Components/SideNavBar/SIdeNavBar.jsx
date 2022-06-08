@@ -25,15 +25,15 @@ function SideNavBar() {
 
                 <li><NavLink to="/skills"><i className="material-icons">directions_run</i>SKILLS</NavLink></li>
                  <li><NavLink to="/"><i className="material-icons">business_center</i>WORK</NavLink></li>
-                <li><a href="./myresume/eslam.html" target="_blank" rel="noopener noreferrer"><i className="material-icons">recent_actors</i>RESUME</a></li>
+                <li><a href="%PUBLIC_URL%/myresume/eslam.html" target="_blank" rel="noopener noreferrer"><i className="material-icons">recent_actors</i>RESUME</a></li>
                 <li><NavLink to="/about"><i className="material-icons">cloud</i>ABOUT</NavLink></li>
                 <li><NavLink to="/contacts"><i className="material-icons">contact_mail</i>CONTACT</NavLink></li>
                 
                 <li><div className="divider"></div></li>
-                <li><a className="subheader">Social</a></li>
+                <li><a href='/#' className="subheader">Social</a></li>
                 <li><a className="waves-effect" href="https://www.linkedin.com/in/eslam-aly-4041b1a7/">Go to linkedin</a></li>
             </ul>
-            <a href="#" data-target="slide-out" className="sidenav-trigger"><i className="medium material-icons brown-text">apps</i></a>
+            <a href="/#" data-target="slide-out" className="sidenav-trigger"><i className="medium material-icons brown-text">apps</i></a>
 
         </div>
     );
