@@ -1,3 +1,4 @@
+import { React } from 'react';
 import './WhatIDo.css';
 import ProductManagementIcon from '../../Assets/pms128.png';
 import BusinessDeveloperIcon from '../../Assets/business100.png';

@@ -1,3 +1,4 @@
+import { React } from 'react';
 import './Articles.css';
 import { useEffect } from 'react';
 import AvatarList from '../../Components/Lists/AvatarList';

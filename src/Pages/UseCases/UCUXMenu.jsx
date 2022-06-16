@@ -1,3 +1,4 @@
+import { React } from 'react';
 import { useEffect } from "react";
 import CardButton from "../../Components/Cards/CardButton";
 import cup from '../../Assets/cup.svg';

@@ -1,3 +1,4 @@
+import { React } from 'react';
 import './Media.css';
 import '../../Css/animation.css';
 import LinkedIn from '../Misc/LinkedIn';

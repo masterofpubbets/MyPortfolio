@@ -1,3 +1,4 @@
+import { React } from 'react';
 import './Certificates.css';
 import UXUIIcon from '../../Assets/google_ux_design.png';
 import GooglePMIcon from '../../Assets/google_pm.svg';

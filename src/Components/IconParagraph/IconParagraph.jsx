@@ -1,3 +1,4 @@
+import { React } from 'react';
 import './IconParagraph.css';
 
 function IconParagraph(params) {

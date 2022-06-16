@@ -1,3 +1,4 @@
+import { React } from 'react';
 import './Cards.css';
 import { Fragment } from "react";
 import Collapsible from "../Collapsible/Collapsible";

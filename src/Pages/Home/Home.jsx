@@ -1,3 +1,4 @@
+import { React } from 'react';
 import HomeSection from '../../Components/HomeSection/HomeSection';
 import WhatIDo from '../../Components/WhatIDo/WhatiDo';
 import UseCases from '../../Components/UseCases/UseCases';

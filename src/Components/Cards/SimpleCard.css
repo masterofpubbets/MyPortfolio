@@ -1,0 +1,38 @@
+.simple-card-main {
+    margin-top: 10px;
+}
+
+.simple-card-header {
+    height: 50px;
+    margin-bottom: 0px;
+    border-radius: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.simple-card-header p {
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.simple-card-header img {
+    position: relative;
+    width: 100px;
+    margin-top: 5px;
+    margin-bottom: -25px;
+    margin-right: -35px;
+    z-index: 1;
+}
+
+.simple-card-body {
+    margin-top: 0px;
+    padding-top: 1px;
+    height: 30vh;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.simple-card-body p {
+    margin-left: 20px;
+}

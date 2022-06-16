@@ -1,3 +1,4 @@
+import { React } from 'react';
 import linkedin from '../../Assets/linkedinLogo.svg';
 
 function LinkedIn(css) {

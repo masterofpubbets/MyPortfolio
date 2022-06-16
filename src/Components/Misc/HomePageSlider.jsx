@@ -1,3 +1,4 @@
+import { React } from 'react';
 import PageSlider from "./PageSlider";
 
 function HomePageSlider(params) {

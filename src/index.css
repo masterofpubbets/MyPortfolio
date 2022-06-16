@@ -13,3 +13,15 @@ body {
 .main-div {
     min-height: 60vh;
 }
+
+.div-width-80 {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-width-85 {
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+}

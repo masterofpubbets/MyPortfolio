@@ -1,3 +1,4 @@
+import { React } from 'react';
 import '../Articles/Articles.css';
 import { useEffect } from "react";
 import AvatarList from '../../Components/Lists/AvatarList';
@@ -7,8 +8,17 @@ import eicaICon from '../../Assets/eica.svg';
 import modivationImage from '../../Assets/proman/eicapromanmodi.jpg';
 import motVPImage from '../../Assets/proman/eicaprommanmv.jpg';
 import bpmnImage from '../../Assets/proman/eicapromanbpmn.png';
+import sImg from '../../Assets/letters/s.svg';
+import wImg from '../../Assets/letters/w.svg';
+import oImg from '../../Assets/letters/o.svg';
+import tImg from '../../Assets/letters/t.svg';
 import FloatingAction from '../../Components/FloatingAction/FloatingAction';
 import Button from '../../Components/Buttons/Button';
+import GanttView from '../../Components/Charts/GanttView';
+import { tasks, dependencies, resources, resourceAssignments } from '../../Store/Consts/EicaProManData';
+import SimpleCard from '../../Components/Cards/SimpleCard';
+import DataGridView from '../../Components/DataGrid/DataGridView';
+import ChartView from '../../Components/Charts/ChartView';
 
 function EicaProMan() {
     useEffect(() => {
@@ -151,7 +161,83 @@ function EicaProMan() {
 
                         </div>
                     </section>
+                </div>
+            </section>
 
+            <section>
+                <div className='container'>
+                    <div className="divider"></div>
+                    <div className="section" id="eica-swot">
+                        <h5>SWOT Analysis</h5>
+                        <p>
+                            Analyzes business goal by focusing on each of internal and external factors for (Strengths and weaknesses).
+                        </p>
+                    </div>
+                    <div className='row'>
+                        <div className='col s12 m6 l6'>
+                            <SimpleCard
+                                headerBackColor="green lighten-3"
+                                headerForeColor="black-text"
+                                backColor="green lighten-2"
+                                foreColor="black-text"
+                                headerText="Strengths"
+                                headerImg={sImg}
+                                lines={eicaProMan.swot.Strengths}
+                            />
+                        </div>
+                        <div className='col s12 m6 l6'>
+                            <SimpleCard
+                                headerBackColor="lime lighten-2"
+                                headerForeColor="black-text"
+                                backColor="lime lighten-1"
+                                foreColor="black-text"
+                                headerText="Weaknesses"
+                                headerImg={wImg}
+                                lines={eicaProMan.swot.Weaknesses}
+                            />
+                        </div>
+                        <div className='col s12 m6 l6'>
+                            <SimpleCard
+                                headerBackColor="light-blue darken-3"
+                                headerForeColor="white-text"
+                                backColor="light-blue darken-4"
+                                foreColor="white-text"
+                                headerText="Opportunities"
+                                headerImg={oImg}
+                                lines={eicaProMan.swot.Opportunities}
+                            />
+                        </div>
+                        <div className='col s12 m6 l6'>
+                            <SimpleCard
+                                headerBackColor="yellow accent-3"
+                                headerForeColor="black-text"
+                                backColor="yellow accent-4"
+                                foreColor="black-text"
+                                headerText="Threats"
+                                headerImg={tImg}
+                                lines={eicaProMan.swot.Threats}
+                            />
+                        </div>
+                    </div>
+
+                    <section>
+                        <div className='sub-paragraph'>
+                            <div className="section">
+                                <h6>SWOT Analysis and Course of Action</h6>
+                                <p>Free EICA's user from manual routine will save time to focus on increasing the consists for electrical
+                                    and instrumentation scope of work. also will reduce the human mistake and gives confident of whatever information generated.
+                                </p>
+                                <DataGridView dataSource={eicaProMan.swotGrid} renderFields={["iconName"]} />
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+            </section>
+
+            <section>
+                <div className='container'>
                     <div className="divider"></div>
                     <div className="section" id="eica-product-requirements">
                         <h5>Product Requirements</h5>
@@ -166,6 +252,100 @@ function EicaProMan() {
                         <AvatarList items={highLevelFeatures} />
                     </div>
 
+                    <div className='sub-paragraph'>
+                        <div className="section">
+                            <h6>Epic and Features</h6>
+                            <p>
+                                Breakdown the high level features into collection of epics contains features.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className='container'>
+                    <div className="divider"></div>
+                    <div className="section" id="eica-roadmap-chart">
+                        <h5>Product Roadmap</h5>
+                        <p>
+                            In this chart all planning Strategy, Features, Epic and release roadmaps.
+                        </p>
+                    </div>
+                </div>
+                <div className='div-width-85'>
+                    <GanttView enabled={false} tasks={tasks} dependencies={dependencies} resources={resources} resourceAssignments={resourceAssignments} height={window.screen.height - 200} />
+                </div>
+                <p className='div-width-85'>These dates are early start and finished because later we will hand the plan to the agile team so they will start
+                    producing the product and the developers will estimate the PBI and the product owner will organize the PBI into
+                    sprints with the scrum team. So later this schedule has to be replace by sprints timeline.</p>
+            </section>
+
+            <section>
+                <div className='container'>
+                    <div className="divider"></div>
+                    <div className="section" id="eica-okr">
+                        <h5>OKRs</h5>
+                        <p>
+                            In an OKR implementation, the objective is qualitative and answers the question of what is to be accomplished.
+                            Objectives are supported by key results which benchmarks and monitors how we achieve the objective.
+                        </p>
+                        <DataGridView dataSource={eicaProMan.okrGrid} renderFields={[]} />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className='container'>
+                    <div className="divider"></div>
+                    <div className="section" id="eica-kpi">
+                        <h5>KPI</h5>
+                        <p>
+                            A key performance indicator is a metric that measures the performance of the new features that we have launched to our users.
+                        </p>
+
+                    </div>
+
+                    {eicaProMan.kpiLists.map((item, index) => {
+                        return (
+                            <div key={"div1" + item.id} className='sub-paragraph'>
+                                <div key={"div1" + item.id} className="section">
+                                    <h6 key={"p6" + item.id}>{item.id + ". " + item.title}</h6>
+                                    <p key={"p" + item.id}>
+                                        {item.description}
+                                    </p>
+                                </div>
+                                {(item.data !== undefined) &&
+                                    <ChartView
+                                        key={index}
+                                        data={item.data}
+                                        argumentField={item.argumentField}
+                                        title={item.title}
+                                        ConstantLineValue={item.ConstantLineValue}
+                                        leftScaleValue={item.leftScaleValue}
+                                        rightTickInterval={item.rightTickInterval}
+                                    />}
+                            </div>
+                        )
+                    })}
+
+                </div>
+
+            </section>
+
+            <section>
+                <div className='container'>
+                    <div className="divider"></div>
+                    <div className="section" id="eica-roadmap-chart">
+                        <h5>Final</h5>
+                        <p>
+                            Now we have to choose a simple project as a pilot project which has less time line among the other project to start working with its team for the new features.
+                        </p>
+                        <p>
+                            During the implementation for the new features a portfolio plan is created to develop a strategy plan over the 
+                            organization to set down the new features for all the running project.
+                        </p>
+                    </div>
                 </div>
             </section>
 

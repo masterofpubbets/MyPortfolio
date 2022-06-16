@@ -1,3 +1,4 @@
+import { React } from 'react';
 import './Icon.css';
 
 function Icon(params) {

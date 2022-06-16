@@ -458,6 +458,13 @@ export const eicaProMan = {
                 link: "#eica-driver-assessment"
             },
             {
+                iconName: "error_outline",
+                colorName: "red darken-1",
+                fontColor: "white",
+                text: "SWOT Analysis",
+                link: "#eica-swot"
+            },
+            {
                 iconName: "device_hub",
                 colorName: "light-blue accent-2",
                 fontColor: "white",
@@ -470,7 +477,387 @@ export const eicaProMan = {
                 fontColor: "white",
                 text: "Product Requirements",
                 link: "#eica-product-requirements"
+            },
+            {
+                iconName: "power_input",
+                colorName: "light-blue darken-4",
+                fontColor: "white",
+                text: "Roadmap",
+                link: "#eica-roadmap-chart"
+            },
+            {
+                iconName: "my_location",
+                colorName: "green accent-4",
+                fontColor: "white",
+                text: "OKRs",
+                link: "#eica-okr"
+            },
+            {
+                iconName: "first_page",
+                colorName: "green accent-4",
+                fontColor: "white",
+                text: "KPIs",
+                link: "#eica-kpi"
             }
         ]
-    }
+    },
+    swot: {
+        Strengths: [
+            "1- Scope and Production stored in one place.",
+            "2- Automatic calculate activities summary.",
+            "3- Fast retrive information.",
+            "4- Cloudification ability."
+        ],
+        Weaknesses: [
+            "1- No standardized reports format.",
+            "2- Non usability outside production team.",
+            "3- Delay in updating production.",
+            "4- Delay in updating scope of work (EICA Items)."
+        ],
+        Opportunities: [
+            "1- New projects started.",
+            "2- New subcontractors company with a good IT Background.",
+            "3- Cloudification course of action.",
+            "4- New Clients requesting integration with 3d cad model."
+        ],
+        Threats: [
+            "1- Due to Coronavirus pandemic there is a chance to work from home.",
+            "2- Bad or Delay communications (Mail and VOIP) in a remote area projects.",
+        ]
+    },
+    swotGrid: {
+        columns: [{
+                dataField: "SWOT",
+                groupIndex: 0,
+            },
+            {
+                dataField: "NoticedStudy",
+            },
+            {
+                dataField: "TargetAction",
+            },
+            {
+                dataField: "CourseOfAction",
+            },
+        ],
+        data: [{
+            ID: 1,
+            SWOT: 'Strengths',
+            NoticedStudy: 'Scope and Production stored in one place',
+            TargetAction: 'Use as a foundation',
+            CourseOfAction: 'Centralize IT System',
+            iconName: "flash_on/green-text accent-4-text"
+        }, {
+            ID: 2,
+            SWOT: 'Strengths',
+            NoticedStudy: 'Automatic calculate activities summary',
+            TargetAction: 'Improve',
+            CourseOfAction: 'Standardize Products',
+            iconName: "flash_on/green-text accent-4-text"
+        }, {
+            ID: 3,
+            SWOT: 'Strengths',
+            NoticedStudy: 'Fast retrive information',
+            TargetAction: 'Use as a foundation',
+            CourseOfAction: 'Centralize IT System',
+            iconName: "flash_on/green-text accent-4-text"
+        }, {
+            ID: 4,
+            SWOT: 'Strengths',
+            NoticedStudy: 'Cloudification ability',
+            TargetAction: 'Use as a foundation',
+            CourseOfAction: 'Cloudification',
+            iconName: "flash_on/green-text accent-4-text"
+        }, {
+            ID: 5,
+            SWOT: 'Weaknesses',
+            NoticedStudy: 'No standardized reports format',
+            TargetAction: 'Standardized the reports',
+            CourseOfAction: 'Centralize IT System',
+            iconName: "battery_alert/lime-text accent-1-text"
+        }, {
+            ID: 6,
+            SWOT: 'Weaknesses',
+            NoticedStudy: 'Non usability outside production team',
+            TargetAction: 'Internal market share by provide usability functins',
+            CourseOfAction: 'Operation Excellence',
+            iconName: "battery_alert/lime-text accent-1-text"
+        }, {
+            ID: 7,
+            SWOT: 'Weaknesses',
+            NoticedStudy: 'Delay in updating production',
+            TargetAction: 'Improve',
+            CourseOfAction: 'Centralize IT System',
+            iconName: "battery_alert/lime-text accent-1-text"
+        }, {
+            ID: 8,
+            SWOT: 'Weaknesses',
+            NoticedStudy: 'Delay in updating scope of work (EICA Items)',
+            TargetAction: 'Improve',
+            CourseOfAction: 'Centralize IT System',
+            iconName: "battery_alert/lime-text accent-1-text"
+        }, {
+            ID: 9,
+            SWOT: 'Opportunities',
+            NoticedStudy: 'New projects started',
+            TargetAction: 'Introduce new capabilies',
+            CourseOfAction: 'Operation Excellence',
+            iconName: "train/orange-text"
+        }, {
+            ID: 10,
+            SWOT: 'Opportunities',
+            NoticedStudy: 'New subcontractors company with a good IT Background',
+            TargetAction: 'Introduce new capabilies',
+            CourseOfAction: 'Operation Excellence',
+            iconName: "train/orange-text"
+        }, {
+            ID: 11,
+            SWOT: 'Opportunities',
+            NoticedStudy: 'Cloudification course of action',
+            TargetAction: 'Extend the system functionalities',
+            CourseOfAction: 'Cloudification',
+            iconName: "train/orange-text"
+        }, {
+            ID: 12,
+            SWOT: 'Opportunities',
+            NoticedStudy: 'New Clients requesting integration with 3d cad model',
+            TargetAction: 'Introduce new capabilies',
+            CourseOfAction: 'Centralize IT System',
+            iconName: "train/orange-text"
+        }, {
+            ID: 13,
+            SWOT: 'Threats',
+            NoticedStudy: 'Due to Coronavirus pandemic there is a chance to work from home',
+            TargetAction: 'Introduce new capabilies',
+            CourseOfAction: 'Operation Excellence',
+            iconName: "error/red-text darken-4-text"
+        }, {
+            ID: 14,
+            SWOT: 'Threats',
+            NoticedStudy: 'Bad or Delay communications (Mail and VOIP) in a remote area projects',
+            TargetAction: 'Introduce new capabilies',
+            CourseOfAction: 'Operation Excellence',
+            iconName: "error/red-text darken-4-text"
+        }]
+    },
+    okrGrid: {
+        columns: [{
+                dataField: "Objective",
+                groupIndex: 0,
+            },
+            {
+                dataField: "KeyResults",
+            }
+        ],
+        data: [{
+                ID: 1,
+                Objective: "Item life sycle is standard",
+                KeyResults: "By the first release EICA-PCE-01 20% of EICA items have a standard life cycle"
+            },
+            {
+                ID: 2,
+                Objective: "Item life sycle is standard",
+                KeyResults: "By the second release EICA-PCE-02 40% of EICA items have a standard life cycle"
+            },
+            {
+                ID: 3,
+                Objective: "Production Service Improvement",
+                KeyResults: "By the second release EICA-PCE-02 100% of weekly and daily production is standard"
+            },
+            {
+                ID: 4,
+                Objective: "Production Service Improvement",
+                KeyResults: "By the second release EICA-PCE-02 100% of weekly and daily production is standard"
+            },
+            {
+                ID: 5,
+                Objective: "Production Service Improvement",
+                KeyResults: "By the second release EICA-PCE-02 Unknown items error reduced by 80%"
+            },
+            {
+                ID: 6,
+                Objective: "Production Service Improvement",
+                KeyResults: "By the second release EICA-PCE-02 Engineering using app for importing 70% of new items"
+            },
+            {
+                ID: 7,
+                Objective: "Automation",
+                KeyResults: "By the first release EICA-PCE-01 production update automation increased by 50%"
+            },
+            {
+                ID: 8,
+                Objective: "Automation",
+                KeyResults: "By the second release EICA-PCE-02 production update automation increased by 80%"
+            },
+            {
+                ID: 9,
+                Objective: "Automation",
+                KeyResults: "By the second release EICA-PCE-02 unnecessary communication reduced between subcontractor and production team by 40%"
+            },
+            {
+                ID: 10,
+                Objective: "Production Service Improvement",
+                KeyResults: "By the second release EICA-PCE-02 achieve weekly production report on time"
+            },
+            {
+                ID: 11,
+                Objective: "Production Service Improvement",
+                KeyResults: "By the second release EICA-PCE-02 achieve daily production report on time"
+            }
+        ]
+    },
+    kpiLists: [{
+            id: 1,
+            title: "Employeer Lifetime Value (LTV)",
+            description: "Measure The Monetary Value of Each Employee in a different division using the app (Functionalities and Reports).",
+            argumentField: "value",
+            ConstantLineValue: 50,
+            leftScaleValue: 100,
+            rightTickInterval: 10,
+            data: [
+                { id: 6, value: 'December-2019', count: 150 },
+                { id: 5, value: 'January-2020', count: 200 },
+                { id: 4, value: 'February-2020', count: 300 },
+                { id: 3, value: 'March-2020', count: 450 },
+                { id: 2, value: 'April-2020', count: 500 },
+                { id: 1, value: 'May-2020', count: 520 },
+            ]
+        },
+        {
+            id: 2,
+            title: "Viral Coefficient (VC)",
+            description: "A measure of how quickly and how widely a marketing message spreads online.",
+            argumentField: "value",
+            ConstantLineValue: 60,
+            leftScaleValue: 100,
+            rightTickInterval: 10,
+            data: [
+                { id: 6, value: 'December-2019', count: 10 },
+                { id: 5, value: 'January-2020', count: 20 },
+                { id: 4, value: 'February-2020', count: 25 },
+                { id: 3, value: 'March-2020', count: 30 },
+                { id: 2, value: 'April-2020', count: 50 },
+                { id: 1, value: 'May-2020', count: 100 },
+            ]
+        },
+        {
+            id: 3,
+            title: "Daily Production Cost (DPC)",
+            description: "A measure of the average of how long it takes to confirm the daily production been updated to the system.",
+            argumentField: "value",
+            ConstantLineValue: 60,
+            leftScaleValue: 100,
+            rightTickInterval: 10,
+            data: [
+                { id: 6, value: 'December-2019', count: 180 },
+                { id: 5, value: 'January-2020', count: 210 },
+                { id: 4, value: 'February-2020', count: 210 },
+                { id: 3, value: 'March-2020', count: 120 },
+                { id: 2, value: 'April-2020', count: 90 },
+                { id: 1, value: 'May-2020', count: 30 },
+            ]
+        },
+        {
+            id: 4,
+            title: "Employee Satisfaction Rating (ESR)",
+            description: "From scale 1 to 100 how is the app satisfys employee doing their job.",
+            argumentField: "value",
+            ConstantLineValue: 90,
+            leftScaleValue: 50,
+            rightTickInterval: 10,
+            data: [
+                { id: 6, value: 'December-2019', count: 20 },
+                { id: 5, value: 'January-2020', count: 25 },
+                { id: 4, value: 'February-2020', count: 30 },
+                { id: 3, value: 'March-2020', count: 35 },
+                { id: 2, value: 'April-2020', count: 60 },
+                { id: 1, value: 'May-2020', count: 80 },
+            ]
+        },
+        {
+            id: 5,
+            title: "On-Time Completion (OC)",
+            description: "How long it takes from the new item created by the engineering being exposed to the production team.",
+            argumentField: "value",
+            ConstantLineValue: 90,
+            leftScaleValue: 50,
+            rightTickInterval: 50,
+            data: [
+                { id: 6, value: 'December-2019', count: 30 },
+                { id: 5, value: 'January-2020', count: 25 },
+                { id: 4, value: 'February-2020', count: 2 },
+                { id: 3, value: 'March-2020', count: 2 },
+                { id: 2, value: 'April-2020', count: 2 },
+                { id: 1, value: 'May-2020', count: 2 },
+            ]
+        },
+        {
+            id: 6,
+            title: "Customer Complaints (CC)",
+            description: "How many complaints of enternal employee and third-parties.",
+            argumentField: "value",
+            ConstantLineValue: 90,
+            leftScaleValue: 50,
+            rightTickInterval: 10,
+            data: [
+                { id: 6, value: 'December-2019', count: 50 },
+                { id: 5, value: 'January-2020', count: 65 },
+                { id: 4, value: 'February-2020', count: 65 },
+                { id: 3, value: 'March-2020', count: 30 },
+                { id: 2, value: 'April-2020', count: 15 },
+                { id: 1, value: 'May-2020', count: 10 },
+            ]
+        },
+        {
+            id: 7,
+            title: "Reports on Time (ROT)",
+            description: "The Variance between planned time for generating official reports and the actual time been sended.",
+            argumentField: "value",
+            ConstantLineValue: 90,
+            leftScaleValue: 50,
+            rightTickInterval: 10,
+            data: [
+                { id: 6, value: 'December-2019', count: 24 },
+                { id: 5, value: 'January-2020', count: 24 },
+                { id: 4, value: 'February-2020', count: 12 },
+                { id: 3, value: 'March-2020', count: 12 },
+                { id: 2, value: 'April-2020', count: 0 },
+                { id: 1, value: 'May-2020', count: 0 },
+            ]
+        },
+        {
+            id: 8,
+            title: "Resource Capacity (RC)",
+            description: "The actual manpower required to run the system starts from the stage 0 which run pervious version of the app.",
+            argumentField: "value",
+            ConstantLineValue: 90,
+            leftScaleValue: 50,
+            rightTickInterval: 10,
+            data: [
+                { id: 6, value: 'December-2019', count: 60 },
+                { id: 5, value: 'January-2020', count: 60 },
+                { id: 4, value: 'February-2020', count: 8 },
+                { id: 3, value: 'March-2020', count: 8 },
+                { id: 2, value: 'April-2020', count: 8 },
+                { id: 1, value: 'May-2020', count: 2 },
+            ]
+        },
+        {
+            id: 9,
+            title: "Reports Coefficient",
+            description: "The amount of error in reports generated due to missing informaion.",
+            argumentField: "value",
+            ConstantLineValue: 90,
+            leftScaleValue: 50,
+            rightTickInterval: 50,
+            data: [
+                { id: 6, value: 'December-2019', count: 160 },
+                { id: 5, value: 'January-2020', count: 80 },
+                { id: 4, value: 'February-2020', count: 40 },
+                { id: 3, value: 'March-2020', count: 0 },
+                { id: 2, value: 'April-2020', count: 0 },
+                { id: 1, value: 'May-2020', count: 0 },
+            ]
+        }
+    ]
 }

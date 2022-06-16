@@ -1,3 +1,4 @@
+import { React } from 'react';
 import './HomeSection.css';
 import Media from '../Media/Media';
 import eslam from '../../Assets/eslam.svg';

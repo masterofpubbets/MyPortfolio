@@ -1,3 +1,4 @@
+import { React } from 'react';
 function MesSended() {
     return (
         <div className="container main-div">

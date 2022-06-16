@@ -1,3 +1,5 @@
+import { React } from 'react';
+
 function AvatarList(params) {
     const items = params.items;
 

@@ -1,3 +1,4 @@
+import { React } from 'react';
 function PageSlider(params) {
     const link = params.link;
     const size = params.size + " material-icons";

@@ -1,3 +1,4 @@
+import { React } from 'react';
 import IconParagraph from "../IconParagraph/IconParagraph";
 import Button from "../Buttons/Button";
 

@@ -1,3 +1,4 @@
+import { React } from 'react';
 import './Articles.css';
 
 function ArticleItem(params) {
