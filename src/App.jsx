@@ -16,6 +16,7 @@ import ProManagementMenu from './Pages/UseCases/ProMangementMenu';
 import ArticlePO from './Pages/Articles/ArticlePO';
 import EAMenu from './Pages/UseCases/EAMenu';
 import EicaProMan from './Pages/ProjectManagement/EicaProMan';
+import Works from './Pages/Works/Works';
 
 function App() {
     const css = "hide-on-med-and-up";
@@ -27,6 +28,7 @@ function App() {
                 </div>
                 <Header />
                 <Routes>
+                    <Route path="/works" exact element={<Works />} />
                     <Route path="/usecases/promanproject/eica" element={<EicaProMan />} />
                     <Route path="/ea" element={<EAMenu />} />
                     <Route path="/articlepo" element={<ArticlePO />} />

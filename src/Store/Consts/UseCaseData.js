@@ -421,6 +421,76 @@ export const eicaProUseCase = {
     mockupLink: ""
 }
 
+export const myPortfolioCase = {
+    navItems: [{
+            key: 1,
+            link: "/usecases",
+            arrowVisible: true,
+            foreColor: "brown-text text-darken-4",
+            title: "UI/UX Use Cases"
+        },
+        {
+            key: 2,
+            link: ".",
+            arrowVisible: false,
+            foreColor: "brown-text text-darken-4",
+            title: "My Portfolio"
+        }
+    ],
+    items: [{
+            key: 1,
+            header: "The product:",
+            img: "laptop_mac",
+            text: "Welcome to My Portfolio, here I design front-end portfolio using latest tech.",
+            textForeColor: " brown-text text-darken-4",
+            textBackColor: "",
+            headerForeColor: " light-blue-text text-darken-4",
+            headerBackColor: "",
+            imageForeColor: " light-blue-text text-darken-4",
+            imageBackColor: ""
+        },
+        {
+            key: 2,
+            header: "Project duration:",
+            img: "access_time",
+            text: "April-2022 To Current",
+            textForeColor: " brown-text text-darken-4",
+            textBackColor: "",
+            headerForeColor: " light-blue-text text-darken-4",
+            headerBackColor: "",
+            imageForeColor: " light-blue-text text-darken-4",
+            imageBackColor: ""
+        },
+        {
+            key: 3,
+            header: "My Role:",
+            img: "account_circle",
+            text: "Front-End Developer",
+            textForeColor: " brown-text text-darken-4",
+            textBackColor: "",
+            headerForeColor: " light-blue-text text-darken-4",
+            headerBackColor: "",
+            imageForeColor: " light-blue-text text-darken-4",
+            imageBackColor: ""
+        },
+        {
+            key: 4,
+            header: "Project Goal:",
+            img: "gps_fixed",
+            text: "expose my skills to the outside world.",
+            textForeColor: " brown-text text-darken-4",
+            textBackColor: "",
+            headerForeColor: " light-blue-text text-darken-4",
+            headerBackColor: "",
+            imageForeColor: " light-blue-text text-darken-4",
+            imageBackColor: ""
+        }
+    ],
+    header: "My Portfolio",
+    caseStudyLink: "",
+    mockupLink: "https://www.figma.com/file/hbfaiAmDFp81DGSuayUNHf/My-Portfilio?node-id=1%3A2"
+}
+
 
 export const eicaProMan = {
     navItems: [{

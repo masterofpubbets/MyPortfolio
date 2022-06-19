@@ -5,13 +5,14 @@ import cup from '../../Assets/cup.svg';
 import shoes from '../../Assets/shoes.svg';
 import pp from '../../Assets/pp.png';
 import eica from '../../Assets/eica.svg';
+import imageCircles  from '../../Assets/site-circle.svg';
 
 
 
 function UCUXMenu() {
 
     useEffect(() => {
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
     }, []);
 
     return (
@@ -55,7 +56,6 @@ function UCUXMenu() {
                     det="Controlling multi phases of a construction project from engineering to commissioning
                     By centralizing information, transform data into a standard shape,
                     Reducing human process and increasing automation and cloudification.
-                    .
                     "
                     buttonCss="brown darken-1"
                     buttonIcon="description"
@@ -87,6 +87,18 @@ function UCUXMenu() {
                     buttonText="Open Case"
                     link="/usecases/usecaseproject"
                     linkParaValue="coffee shop app2"
+                />
+
+                <CardButton
+                    css="col s12 m6 l4"
+                    header="My Portfolio"
+                    img={imageCircles}
+                    det="Because I would like to keep developing in my free time I thought that it’s a good idea to design my own portfolio by myself."
+                    buttonCss="brown darken-1"
+                    buttonIcon="description"
+                    buttonText="Open Case"
+                    link="/usecases/usecaseproject"
+                    linkParaValue="myportfolio"
                 />
 
             </div>

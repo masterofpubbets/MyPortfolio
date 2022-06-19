@@ -165,6 +165,14 @@
     margin-top: 25px;
 }
 
+.div-margin-top-10 {
+    margin-top: 10px;
+}
+
+.div-margin-top-5 {
+    margin-top: 5px;
+}
+
 .fontsize-13em {
     font-size: 1.3em;
 }
@@ -175,4 +183,44 @@
 
 .fontWeight-bold {
     font-weight: bold;
+}
+
+.width-64 {
+    width: 64px;
+}
+
+.app-max-height-200 {
+    max-height: 200px;
+}
+
+.app-min-height-200 {
+    min-height: 200px;
+}
+
+.app-min-height-300 {
+    min-height: 300px;
+}
+
+.app-height-200 {
+    min-height: 200px;
+}
+
+.app-height-200 {
+    height: 200px;
+}
+
+.app-height-250 {
+    height: 250px;
+}
+
+.app-height-400 {
+    height: 400px;
+}
+
+.app-height-600 {
+    height: 600px;
+}
+
+.app-height-800 {
+    height: 800px;
 }

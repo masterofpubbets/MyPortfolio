@@ -10,7 +10,7 @@ function Header() {
             <EslamMark />
             <div className='ButtonsSection hide-on-small-only'>
                 <NavLink to="/skills"><HeaderButton title="SKILLS" link="#" external={false}/></NavLink>
-                 <HeaderButton title="WORK" link="#" external={false}/>
+                <NavLink to="/works"><HeaderButton title="WORK" link="#" external={false}/></NavLink>
                 <HeaderButton title="RESUME" link="./myresume/eslam.html" external={true}/>
                 <NavLink to="/about"><HeaderButton title="ABOUT" link="#" external={false}/></NavLink>
                 <NavLink to="/contacts"><HeaderButton title="CONTACT" link="#" external={false}/></NavLink>

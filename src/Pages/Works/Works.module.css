@@ -1,0 +1,79 @@
+.companyLogo {
+    width: 64px;
+}
+
+.headerIcon {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+
+.headerIcon p {
+    padding-top: 5px;
+}
+
+.headerTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productImage {
+    width: 64px;
+}
+
+.productContainer {
+    display: grid;
+    grid-template-areas: 'logo title' 'goals-header roi-header' 'goals rois';
+}
+
+.productLogo {
+    grid-area: logo;
+    width: 64px;
+}
+
+.productLogo img {
+    width: 64px;
+}
+
+.productTitle {
+    grid-area: title;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: large;
+}
+
+.productGoalHeader {
+    grid-area: goals-header;
+}
+
+.productGoalHeader p {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: large;
+}
+
+.productRoiHeader {
+    grid-area: roi-header;
+}
+
+.productRoiHeader p {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: large;
+}
+
+.productGoals {
+    grid-area: goals;
+}
+
+.productRoi {
+    grid-area: rois;
+}

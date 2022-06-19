@@ -3,11 +3,12 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Breadcrumbs from "../../Components/Header/Breadcrumbs";
 import UseCaseItem from "../../Components/UseCases/UseCaseItem";
-import { CoffeeShopData, CoffeeShopDataInsight, webSiteShoping, projectPipeline, eicaEA, eicaProUseCase } from '../../Store/Consts/UseCaseData';
+import { CoffeeShopData, CoffeeShopDataInsight, webSiteShoping, projectPipeline, eicaEA, eicaProUseCase, myPortfolioCase } from '../../Store/Consts/UseCaseData';
 import imageWebsite from '../../Assets/websitemockup.png';
 import imagePP from '../../Assets/pphome.jpg';
 import imageEICAEA from '../../Assets/eicaea.png';
 import imageCoffeeshop  from '../../Assets/coffeeshopmockup.png';
+import imageCircles  from '../../Assets/site-circle.svg';
 import bpmnImage from '../../Assets/proman/eicapromanbpmn.png';
 
 function UseCaseProject(params) {
@@ -51,6 +52,12 @@ function UseCaseProject(params) {
         if (name === "eica ea") {
             return (
                 <Breadcrumbs navItems={eicaEA.navItems} />
+            )
+        }
+
+        if (name === "myportfolio") {
+            return (
+                <Breadcrumbs navItems={myPortfolioCase.navItems} />
             )
         }
     };
@@ -128,6 +135,19 @@ function UseCaseProject(params) {
                 headerForeColor="light-blue-text text-darken-4"
                 caseStudyLink={eicaProUseCase.caseStudyLink}
                 mockupLink={eicaProUseCase.mockupLink}
+                />
+            )
+        }
+
+        if (name === "myportfolio") {
+            return (
+                <UseCaseItem 
+                items={myPortfolioCase.items} 
+                rightImage={imageCircles} 
+                header={myPortfolioCase.header} 
+                headerForeColor="light-blue-text text-darken-4"
+                caseStudyLink={myPortfolioCase.caseStudyLink}
+                mockupLink={myPortfolioCase.mockupLink}
                 />
             )
         }
