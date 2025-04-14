@@ -54,6 +54,14 @@ pipeline {
                 }
             }
         }
+
+        stage('Publish Docker Image') {
+            steps {
+                script {
+                    dok.publishImage('my-portfolio', 'masterofpubbets/my-portfolio')
+                }
+            }
+        }
     }
 
     post {
