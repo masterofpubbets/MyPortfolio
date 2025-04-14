@@ -2,7 +2,7 @@ def gv
 
 pipeline {
     agent any
-    enviroment {
+    environment {
         NEW_VERSION = '1.0.0'
     }
     parameters {
