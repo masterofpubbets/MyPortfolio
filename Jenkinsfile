@@ -1,4 +1,5 @@
 def gv
+def dok
 pipeline {
     agent any
     environment {
@@ -14,7 +15,6 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Checkout code from your repository
                 checkout scm
             }
         }
@@ -22,6 +22,7 @@ pipeline {
             steps {
                 script {
                     gv = load './scripts/scripts.groovy'
+                    dok = load './scripts/dockers.groovy'
                 }
             }
         }
@@ -46,10 +47,11 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Build Docker Image') {
             steps {
-                // Example: Deploy your application
-                echo 'Deploying the application...'
+                script {
+                    dok.buildImage('my-portfolio')
+                }
             }
         }
     }
