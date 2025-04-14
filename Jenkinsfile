@@ -1,5 +1,4 @@
-def gv
-
+def gv = load('./scripts/scripts.groovy')
 pipeline {
     agent any
     environment {
@@ -21,9 +20,6 @@ pipeline {
         }
         stage('Init') {
             steps {
-                script {
-                    gv = load './scripts/scripts.groovy'
-                }
             }
         }
 
