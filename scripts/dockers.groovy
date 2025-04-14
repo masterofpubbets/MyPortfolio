@@ -1,5 +1,5 @@
 def buildImage(imageName) {
-    sh "docker build -t ${imageName} ."
+    bat "docker build -t ${imageName} ."
 }
 
 return [
