@@ -1,5 +1,5 @@
 def make() {
-    archiveArtifacts artifacts: '**/*.*',
+    archiveArtifacts artifacts: '**/*',
                    allowEmptyArchive: true,
                    fingerprint: true,
                    onlyIfSuccessful: true
