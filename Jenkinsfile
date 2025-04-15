@@ -24,6 +24,7 @@ pipeline {
                     gv = load './scripts/scripts.groovy'
                     dok = load './scripts/dockers.groovy'
                 }
+                echo "BRANCH_NAME: ${env.BRANCH_NAME}"
             }
         }
 
