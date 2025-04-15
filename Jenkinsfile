@@ -48,6 +48,11 @@ pipeline {
         }
 
         stage('Build Docker Image') {
+            when {
+                expression {
+                    CHANGE_BRANCH == 'main'
+                }
+            }
             steps {
                 script {
                     dok.buildImage('my-portfolio')
@@ -56,6 +61,11 @@ pipeline {
         }
 
         stage('Publish Docker Image') {
+            when {
+                expression {
+                    CHANGE_BRANCH == 'main'
+                }
+            }
             steps {
                 script {
                     dok.publishImage('my-portfolio', 'masterofpubbets/my-portfolio')
