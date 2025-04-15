@@ -4,7 +4,12 @@ def buildImage(imageName) {
 
 def publishImage(imageName, repoName) {
     bat "docker tag ${imageName} ${repoName}"
-    bat "docker push ${repoName}"
+    withCredentials([
+        usernamePassword(credentials: 'docker-hub-m', usernameVariable: usr, passwordVariable: pass)
+    ]) {
+        bat "docker login -u ${usr} -p ${pass}"
+        bat "docker push ${repoName}"
+    }
 }
 
 return [
