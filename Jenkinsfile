@@ -50,7 +50,7 @@ pipeline {
         stage('Build Docker Image') {
             when {
                 expression {
-                    CHANGE_BRANCH == 'main'
+                    BRANCH_NAME == 'main'
                 }
             }
             steps {
@@ -63,7 +63,7 @@ pipeline {
         stage('Publish Docker Image') {
             when {
                 expression {
-                    CHANGE_BRANCH == 'main'
+                    BRANCH_NAME == 'main'
                 }
             }
             steps {
