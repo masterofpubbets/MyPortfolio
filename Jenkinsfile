@@ -8,7 +8,7 @@ pipeline {
     parameters {
         string(name: 'str1', defaultValue: '', description: 'blabla')
         choice(name: 'list1', choices: ['A', 'B', 'C'], description: '')
-        booleanParam(name: 'chk', defaultValue: false, description: '')
+        booleanParam(name: 'DockerBuild', defaultValue: true, description: '')
         booleanParam(name: 'runTest', defaultValue: false, description: '')
     }
 
@@ -24,7 +24,6 @@ pipeline {
                     gv = load './scripts/scripts.groovy'
                     dok = load './scripts/dockers.groovy'
                 }
-                echo "BRANCH_NAME: ${env.BRANCH_NAME}"
             }
         }
 
@@ -51,7 +50,7 @@ pipeline {
         stage('Build Docker Image') {
             when {
                 expression {
-                    env.BRANCH_NAME == 'main'
+                    params.DockerBuild == true
                 }
             }
             steps {
@@ -64,7 +63,7 @@ pipeline {
         stage('Publish Docker Image') {
             when {
                 expression {
-                    env.BRANCH_NAME == 'main'
+                    params.DockerBuild == true
                 }
             }
             steps {
