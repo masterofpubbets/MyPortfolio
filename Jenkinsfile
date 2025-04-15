@@ -1,5 +1,6 @@
 def gv
 def dok
+def art
 pipeline {
     agent any
     environment {
@@ -8,7 +9,7 @@ pipeline {
     parameters {
         string(name: 'str1', defaultValue: '', description: 'blabla')
         choice(name: 'list1', choices: ['A', 'B', 'C'], description: '')
-        booleanParam(name: 'DockerBuild', defaultValue: true, description: '')
+        booleanParam(name: 'DockerBuild', defaultValue: false, description: '')
         booleanParam(name: 'runTest', defaultValue: false, description: '')
     }
 
@@ -23,6 +24,7 @@ pipeline {
                 script {
                     gv = load './scripts/scripts.groovy'
                     dok = load './scripts/dockers.groovy'
+                    art = load './scripts/artifacts.groovy'
                 }
             }
         }
@@ -80,7 +82,9 @@ pipeline {
             echo 'Pipeline finished!'
         }
         success {
-            // Cleanup or send notifications
+            script {
+                art.make()
+            }
             echo 'Pipeline success!'
         }
         failure {
