@@ -25,6 +25,7 @@ pipeline {
                     gv = load './scripts/scripts.groovy'
                     dok = load './scripts/dockers.groovy'
                     art = load './scripts/artifacts.groovy'
+                    dockerBuild = true
                 }
             }
         }
