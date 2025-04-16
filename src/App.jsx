@@ -5,7 +5,7 @@ import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home/Home';
 import 'materialize-css/dist/css/materialize.min.css';
 import Header from './Components/Header/Header';
-import SideNavBar from './Components/SideNavBar/SideNavBar';
+import SideNavBar from './Components/SideNavBar/SideNavigateBar';
 import MesSended from './Components/Misc/MesSended';
 import Skills from './Pages/Skills/Skills';
 import About from './Pages/About/About';
