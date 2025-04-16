@@ -35,7 +35,6 @@ function SideNavBar() {
                 <li><a className="waves-effect" href="https://www.linkedin.com/in/eslam-aly-4041b1a7/">Go to linkedin</a></li>
             </ul>
             <a href="/#" data-target="slide-out" className="sidenav-trigger"><i className="medium material-icons brown-text">apps</i></a>
-
         </div>
     );
 }
