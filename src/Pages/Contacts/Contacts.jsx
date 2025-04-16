@@ -13,9 +13,9 @@ function Contacts() {
                 <h5>Contacts</h5>
             </div>
             <div className="row">
-                <p col s12 m12 l12>Name: Eslam Aly</p>
-                <p col s12 m12 l12>Phone: +62 817-7653-1888</p>
-                <p col s12 m12 l12>Personal Mail: master.pubbets@gmail.com</p>
+                <p>Name: Eslam Aly</p>
+                <p>Phone: +62 817-7653-1888</p>
+                <p>Personal Mail: master.pubbets@gmail.com</p>
                 <a href={"https://www.linkedin.com/in/eslam-aly-4041b1a7/"} target="_blank" rel="noopener noreferrer">
                     <p>Linkedin: https://www.linkedin.com/in/eslam-aly-4041b1a7/</p>
                 </a>

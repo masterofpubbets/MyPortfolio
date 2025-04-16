@@ -8,8 +8,8 @@ function About() {
     
     return (
         <div className="container main-div">
-            <div class="divider"></div>
-            <div class="section">
+            <div className="divider"></div>
+            <div className="section">
                 <h5>About</h5>
             </div>
 
