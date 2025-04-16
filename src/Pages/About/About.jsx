@@ -22,7 +22,7 @@ function About() {
                 <p className="fontsize-12em">Now after a way long of studying and working experience I am a specialist in Product Management, and I am always coaching my team and leading them to continue building things together that work and fit together.</p>
             </blockquote>
             <blockquote className="blockquote-brwon">
-                <p className="fontsize-12em">Motivated and forward-thinking product owner with 18+
+                <p className="fontsize-12em">Motivated and forward-thinking product owner with 20+
                     years of experience in a dynamic SaaS environment.
                     Eager to support team with leadership and guidance over
                     a wide range of product development efforts in order to
