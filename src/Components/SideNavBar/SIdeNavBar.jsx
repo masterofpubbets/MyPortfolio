@@ -14,6 +14,7 @@ function SideNavBar() {
 
     return (
         <div>
+            
             <ul id="slide-out" className="sidenav">
                 <li><div className="user-view">
                     <div className="background">
