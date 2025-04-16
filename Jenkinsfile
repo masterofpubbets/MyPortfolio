@@ -57,9 +57,7 @@ pipeline {
                 }
             }
             steps {
-                script {
-                    dok.buildImage('my-portfolio')
-                }
+                bat 'docker build -t my-portfolio .'
             }
         }
 
