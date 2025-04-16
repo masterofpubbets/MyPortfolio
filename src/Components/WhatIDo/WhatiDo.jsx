@@ -8,6 +8,8 @@ import EAIcon from '../../Assets/enterprisearchitecture.svg';
 import DeveloperIcon from '../../Assets/developer.svg';
 import DBIcon from '../../Assets/db.svg';
 import CloudIcon from '../../Assets/cloud.svg';
+import jenkinsIcon from '../../Assets/jenkins-icon.png';
+import dockerIcon from '../../Assets/docker-icon.png';
 import Icon from '../Icons/Icon';
 import PageTitle from '../Header/PageTitle';
 import HomePageSlider from '../Misc/HomePageSlider';
@@ -25,6 +27,8 @@ function WhatIDo() {
                 <div className='Icon col s12 m6 l3'><Icon title="Developing" icon={DeveloperIcon} /></div>
                 <div className='Icon col s12 m6 l3'><Icon title="DBMS & SQL" icon={DBIcon} /></div>
                 <div className='Icon col s12 m6 l3'><Icon title="Cloudification" icon={CloudIcon} /></div>
+                <div className='Icon col s12 m6 l3'><Icon title="Jenkins" icon={jenkinsIcon} /></div>
+                <div className='Icon col s12 m6 l3'><Icon title="Docker" icon={dockerIcon} /></div>
             </div>
             <div className='row'>
             <HomePageSlider css="silder-buttons" color="brown" size = "Tiny" foreColor = "grey-text text-lighten-3" cssSlider = "silder-button"/>

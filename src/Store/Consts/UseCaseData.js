@@ -931,3 +931,73 @@ export const eicaProMan = {
         }
     ]
 }
+
+export const myportfolioCICDUseCase = {
+    navItems: [{
+            key: 1,
+            link: "/cicdmenu",
+            arrowVisible: true,
+            foreColor: "brown-text text-darken-4",
+            title: "CI/CD with Self-Hosting"
+        },
+        {
+            key: 2,
+            link: ".",
+            arrowVisible: false,
+            foreColor: "brown-text text-darken-4",
+            title: "My Portfolio"
+        }
+    ],
+    items: [{
+            key: 1,
+            header: "The product:",
+            img: "laptop_mac",
+            text: "My Portfolio web application using CI/CD with self-hosting.",
+            textForeColor: " brown-text text-darken-4",
+            textBackColor: "",
+            headerForeColor: " light-blue-text text-darken-4",
+            headerBackColor: "",
+            imageForeColor: " light-blue-text text-darken-4",
+            imageBackColor: ""
+        },
+        {
+            key: 2,
+            header: "Project duration:",
+            img: "access_time",
+            text: "Jan-2022 To Current",
+            textForeColor: " brown-text text-darken-4",
+            textBackColor: "",
+            headerForeColor: " light-blue-text text-darken-4",
+            headerBackColor: "",
+            imageForeColor: " light-blue-text text-darken-4",
+            imageBackColor: ""
+        },
+        {
+            key: 3,
+            header: "My Role:",
+            img: "account_circle",
+            text: "Developer and DevOps Engineer",
+            textForeColor: " brown-text text-darken-4",
+            textBackColor: "",
+            headerForeColor: " light-blue-text text-darken-4",
+            headerBackColor: "",
+            imageForeColor: " light-blue-text text-darken-4",
+            imageBackColor: ""
+        },
+        {
+            key: 4,
+            header: "Project Goal:",
+            img: "gps_fixed",
+            text: "Implementing CI/CD/CD involves a structured pipeline to automate software development and deployment efficiently.",
+            textForeColor: " brown-text text-darken-4",
+            textBackColor: "",
+            headerForeColor: " light-blue-text text-darken-4",
+            headerBackColor: "",
+            imageForeColor: " light-blue-text text-darken-4",
+            imageBackColor: ""
+        }
+    ],
+    header: "My Portfolio Web App Case Study",
+    caseStudyLink: "https://docs.google.com/presentation/d/1V9_9agNHAgXCmLkSum8YMxvFg0BveuEzp2HY0e7_SFc/edit?usp=sharing",
+    mockupLink: ""
+}

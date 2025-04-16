@@ -7,7 +7,7 @@ pipeline {
         NEW_VERSION = '1.0.0'
     }
     parameters {
-        string(name: 'str1', defaultValue: '', description: 'blabla')
+        string(name: 'str1', defaultValue: 'MyPortfolio', description: 'Webapp')
         choice(name: 'list1', choices: ['A', 'B', 'C'], description: '')
         booleanParam(name: 'dockerBuild', defaultValue: true, description: '')
         booleanParam(name: 'runTest', defaultValue: false, description: '')
