@@ -17,6 +17,7 @@ import ArticlePO from './Pages/Articles/ArticlePO';
 import EAMenu from './Pages/UseCases/EAMenu';
 import EicaProMan from './Pages/ProjectManagement/EicaProMan';
 import Works from './Pages/Works/Works';
+import Cicd from './Pages/Articles/Cicd';
 
 function App() {
     const css = "hide-on-med-and-up";
@@ -32,6 +33,7 @@ function App() {
                     <Route path="/usecases/promanproject/eica" element={<EicaProMan />} />
                     <Route path="/ea" element={<EAMenu />} />
                     <Route path="/articlepo" element={<ArticlePO />} />
+                    <Route path="/cicd" element={<Cicd />} />
                     <Route path="/proman" element={<ProManagementMenu />} />
                     <Route path="/usecases/usecaseproject/:name" element={<UseCaseProject />} />
                     <Route path="/usecases" exact element={<UCUXMenu />} />

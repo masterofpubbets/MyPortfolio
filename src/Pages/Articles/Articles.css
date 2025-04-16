@@ -74,6 +74,12 @@
     color: #b71c1c;
 }
 
+.article-p-example-m {
+    font-style: normal;
+    color: #2a2c33;
+    margin-left: 30px;
+}
+
 .article-p-note {
     font-weight: bold;
     color: #2e7d32;
