@@ -17,7 +17,7 @@ import ArticlePO from './Pages/Articles/ArticlePO';
 import EAMenu from './Pages/UseCases/EAMenu';
 import EicaProMan from './Pages/ProjectManagement/EicaProMan';
 import Works from './Pages/Works/Works';
-import Cicd from './Pages/Articles/Cicd';
+import Cicd from './Pages/Articles/CicdSh'
 
 function App() {
     const css = "hide-on-med-and-up";
