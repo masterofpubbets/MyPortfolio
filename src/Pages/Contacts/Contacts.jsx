@@ -8,8 +8,8 @@ function Contacts() {
     
     return (
         <div className="container main-div">
-            <div class="divider"></div>
-            <div class="section">
+            <div className="divider"></div>
+            <div className="section">
                 <h5>Contacts</h5>
             </div>
             <div className="row">
@@ -17,13 +17,13 @@ function Contacts() {
                 <p col s12 m12 l12>Phone: +62 817-7653-1888</p>
                 <p col s12 m12 l12>Personal Mail: master.pubbets@gmail.com</p>
                 <a href={"https://www.linkedin.com/in/eslam-aly-4041b1a7/"} target="_blank" rel="noopener noreferrer">
-                    <p col s12 m12 l12>Linkedin: https://www.linkedin.com/in/eslam-aly-4041b1a7/</p>
+                    <p>Linkedin: https://www.linkedin.com/in/eslam-aly-4041b1a7/</p>
                 </a>
                 <a href={"https://github.com/masterofpubbets"} target="_blank" rel="noopener noreferrer">
-                    <p col s12 m12 l12>Github</p>
+                    <p>Github</p>
                 </a>
                 <a href={"https://hub.docker.com/u/masterofpubbets"} target="_blank" rel="noopener noreferrer">
-                    <p col s12 m12 l12>Dockerhub</p>
+                    <p>Dockerhub</p>
                 </a>
            </div>
         </div>
