@@ -9,7 +9,7 @@ pipeline {
     parameters {
         string(name: 'str1', defaultValue: '', description: 'blabla')
         choice(name: 'list1', choices: ['A', 'B', 'C'], description: '')
-        booleanParam(name: 'dockerBuild', defaultValue: false, description: '')
+        booleanParam(name: 'dockerBuild', defaultValue: true, description: '')
         booleanParam(name: 'runTest', defaultValue: false, description: '')
     }
 
